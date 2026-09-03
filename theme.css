@@ -47,29 +47,30 @@
   --ui-panel-padding-x: 1.5rem;
   --ui-panel-padding-y: 1.5rem;
 
-  /* claro — lona crua, mar de esmeralda, latão polido. Tudo chapado. */
-  --background: oklch(0.955 0.012 96);
-  --foreground: oklch(0.26 0.03 200);
-  --card: oklch(0.988 0.006 96);
-  --card-foreground: oklch(0.26 0.03 200);
-  --popover: oklch(0.988 0.006 96);
-  --popover-foreground: oklch(0.26 0.03 200);
-  --primary: oklch(0.5 0.095 196);
-  --primary-foreground: oklch(0.98 0.01 96);
-  --secondary: oklch(0.93 0.014 100);
-  --secondary-foreground: oklch(0.28 0.03 200);
-  --muted: oklch(0.93 0.014 100);
-  --muted-foreground: oklch(0.48 0.028 200);
-  --accent: oklch(0.74 0.1 82);
-  --accent-foreground: oklch(0.26 0.05 74);
-  --destructive: oklch(0.55 0.19 28);
-  --destructive-foreground: oklch(0.98 0.01 28);
-  --border: oklch(0.86 0.02 96);
-  --input: oklch(0.84 0.024 96);
-  --ring: oklch(0.62 0.1 82);
+  /* claro — pedra neutra quente (esquema do Knights) + latão/âmbar como ÚNICA acentuação.
+     Primary monocromático (botão quase-preto, pegada shadcn/vercel). Tudo chapado. */
+  --background: oklch(0.945 0.006 95);
+  --foreground: oklch(0.24 0.012 250);
+  --card: oklch(0.98 0.004 95);
+  --card-foreground: oklch(0.24 0.012 250);
+  --popover: oklch(0.98 0.004 95);
+  --popover-foreground: oklch(0.24 0.012 250);
+  --primary: oklch(0.3 0.014 250);
+  --primary-foreground: oklch(0.97 0.004 95);
+  --secondary: oklch(0.9 0.006 95);
+  --secondary-foreground: oklch(0.26 0.012 250);
+  --muted: oklch(0.9 0.006 95);
+  --muted-foreground: oklch(0.46 0.014 250);
+  --accent: oklch(0.72 0.15 68);
+  --accent-foreground: oklch(0.22 0.06 58);
+  --destructive: oklch(0.53 0.2 27);
+  --destructive-foreground: oklch(0.98 0.01 27);
+  --border: oklch(0.82 0.008 95);
+  --input: oklch(0.8 0.01 95);
+  --ring: oklch(0.6 0.14 68);
 
-  --shadow-color: oklch(0.4 0.04 200);
-  --shadow-color-strong: oklch(0.26 0.04 205);
+  --shadow-color: oklch(0.4 0.02 250);
+  --shadow-color-strong: oklch(0.26 0.02 250);
   --shadow-color-soft: color-mix(in oklch, var(--shadow-color) 12%, transparent);
   --shadow-color-strong-soft: color-mix(in oklch, var(--shadow-color-strong) 16%, transparent);
   --shadow-panel: 0 1px 2px -1px var(--shadow-color-strong-soft);
@@ -128,28 +129,28 @@
 }
 
 [data-theme="fearless"].dark {
-  --background: oklch(0.185 0.022 210);
-  --foreground: oklch(0.93 0.012 92);
-  --card: oklch(0.225 0.024 210);
-  --card-foreground: oklch(0.93 0.012 92);
-  --popover: oklch(0.225 0.024 210);
-  --popover-foreground: oklch(0.93 0.012 92);
-  --primary: oklch(0.72 0.11 196);
-  --primary-foreground: oklch(0.16 0.03 210);
-  --secondary: oklch(0.27 0.026 210);
-  --secondary-foreground: oklch(0.93 0.012 92);
-  --muted: oklch(0.27 0.026 210);
-  --muted-foreground: oklch(0.72 0.026 198);
-  --accent: oklch(0.76 0.11 82);
-  --accent-foreground: oklch(0.18 0.04 74);
-  --destructive: oklch(0.64 0.21 28);
-  --destructive-foreground: oklch(0.98 0.01 28);
-  --border: oklch(0.33 0.028 208);
-  --input: oklch(0.35 0.03 208);
-  --ring: oklch(0.7 0.1 82);
+  --background: oklch(0.19 0.012 250);
+  --foreground: oklch(0.9 0.006 95);
+  --card: oklch(0.23 0.014 250);
+  --card-foreground: oklch(0.9 0.006 95);
+  --popover: oklch(0.23 0.014 250);
+  --popover-foreground: oklch(0.9 0.006 95);
+  --primary: oklch(0.88 0.006 95);
+  --primary-foreground: oklch(0.18 0.012 250);
+  --secondary: oklch(0.28 0.016 250);
+  --secondary-foreground: oklch(0.9 0.006 95);
+  --muted: oklch(0.28 0.016 250);
+  --muted-foreground: oklch(0.66 0.014 250);
+  --accent: oklch(0.78 0.14 70);
+  --accent-foreground: oklch(0.18 0.06 58);
+  --destructive: oklch(0.62 0.22 27);
+  --destructive-foreground: oklch(0.98 0.01 27);
+  --border: oklch(0.33 0.016 250);
+  --input: oklch(0.35 0.018 250);
+  --ring: oklch(0.72 0.14 70);
 
-  --shadow-color: oklch(0.04 0.015 210);
-  --shadow-color-strong: oklch(0.02 0.008 210);
+  --shadow-color: oklch(0.04 0.01 250);
+  --shadow-color-strong: oklch(0.02 0.006 250);
   --shadow-color-soft: color-mix(in oklch, var(--shadow-color) 42%, transparent);
   --shadow-color-strong-soft: color-mix(in oklch, var(--shadow-color-strong) 38%, transparent);
   --shadow-panel: 0 1px 2px -1px var(--shadow-color-strong-soft);
