@@ -6,7 +6,7 @@ import { UserMenu } from "./UserMenu";
 
 // Base do venore-pulse (faixa única full-width, sem encolher ao rolar). A marca é a âncora do
 // A marca é o logo real do site (PlatformBrand).
-export function HeaderSlot({ brand, userbarEnabled, headerNavItems, user, canAccessAdmin, onSignOut }: HeaderSlotProps) {
+export function HeaderSlot({ brand, userbarEnabled, headerNavItems, user, canAccessAdmin, onSignOut, showLoginLink }: HeaderSlotProps) {
   return (
     <header className="sticky top-0 z-40 flex h-16 shrink-0 items-center justify-between gap-6 border-b border-border bg-card px-4 text-foreground shadow-header sm:px-6">
       <div className="flex min-w-0 items-center gap-3">
@@ -33,14 +33,14 @@ export function HeaderSlot({ brand, userbarEnabled, headerNavItems, user, canAcc
       {userbarEnabled ? (
         user ? (
           <UserMenu user={user} canAccessAdmin={canAccessAdmin} onSignOut={onSignOut} />
-        ) : (
+        ) : showLoginLink ? (
           <Link
             href="/login"
             className="rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground ui-motion-base outline-none hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
           >
             Entrar
           </Link>
-        )
+        ) : null
       ) : null}
     </header>
   );
